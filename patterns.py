@@ -23,8 +23,13 @@ def pattern4(n):
             print("*",end=" ")
         print(" ")
 
+def pattern5(n):
+    for i in range(n+1):
+        for j in range(1,n-i+1):
+            print("*",end=" ")
+        print(" ")
 
 
 
-pattern4(5)
+pattern5(5)
  
