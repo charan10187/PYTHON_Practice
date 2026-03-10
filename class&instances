@@ -1,0 +1,8 @@
+class Ssc():
+    def __init__(self,name):
+        self.name=name
+        print(self.name)
+
+Name=input("enter name:")
+s1=Ssc(Name)
+s2=Ssc("lokesh")
