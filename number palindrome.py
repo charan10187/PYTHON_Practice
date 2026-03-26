@@ -1,5 +1,6 @@
-num=12321
-if num==num[::-1]:
+num=1231
+s=str(num)
+if s==s[::-1]:
     print("palindrome")
 else:
     print("Not palindrone")
