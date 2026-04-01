@@ -9,7 +9,7 @@ then assine b value to a , here a becomes b
 then assine b=temp where temp is holding the a value so b becomes a
  """
 
-# basic
+# basic level
 """
 a=10
 b=20
@@ -20,11 +20,20 @@ b=temp
 print(a,b)
 
 """
-# intermediat
-a=input("a :")
-b=input("b :")
-print(f"before swaping {a},{b} values")
+# # intermediat level
+# 
+# a=input("a :")
+# b=input("b :")
+# print(f"before swaping {a},{b} values")
+# temp=a
+# a=b
+# b=temp
+# print(f"After swaping a:{a},b:{b}")
+
+# Advanced level
+a,b=map(int,input().split())
+print("before swap",a,b)
 temp=a
 a=b
 b=temp
-print(f"After swaping a:{a},b:{b}")
+print("After swap",a,b)
