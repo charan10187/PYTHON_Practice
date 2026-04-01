@@ -10,6 +10,7 @@ then assine b=temp where temp is holding the a value so b becomes a
  """
 
 # basic
+"""
 a=10
 b=20
 print(a,b)
@@ -17,3 +18,13 @@ temp=a
 a=b
 b=temp
 print(a,b)
+
+"""
+# intermediat
+a=input("a :")
+b=input("b :")
+print(f"before swaping {a},{b} values")
+temp=a
+a=b
+b=temp
+print(f"After swaping a:{a},b:{b}")
