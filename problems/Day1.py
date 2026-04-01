@@ -9,3 +9,11 @@ then assine b value to a , here a becomes b
 then assine b=temp where temp is holding the a value so b becomes a
  """
 
+# basic
+a=10
+b=20
+print(a,b)
+temp=a
+a=b
+b=temp
+print(a,b)
