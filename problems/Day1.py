@@ -39,16 +39,16 @@ a=b
 b=temp
 print("After swap",a,b)
 '''
-# without using third variable
-a,b=map(int,input("enter a,b values: ").split())
-print(f"a:{a},b:{b}")
-a=a+b
-b=a-b
-a=a-b
-print(f"a:{a},b:{b}")
+# # without using third variable
+# a,b=map(int,input("enter a,b values: ").split())
+# print(f"a:{a},b:{b}")
+# a=a+b
+# b=a-b
+# a=a-b
+# print(f"a:{a},b:{b}")
 
-# # in-built method
-# a, b = input().split()
-# print(f"before swapping {a},{b} values")
-# a, b = b, a
-# print(a, b)
+# without logic
+a, b = input().split()
+print(f"before swapping {a},{b} values")
+a, b = b, a
+print(a, b)
