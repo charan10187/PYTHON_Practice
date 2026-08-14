@@ -1,4 +1,4 @@
-#using oops
+# using oops
 class Sum:
     def __init__(self,a,b):
         self.a=a
@@ -6,8 +6,9 @@ class Sum:
     def sum(self):
         add = self.a+self.b
         return add
-a1=Sum(19,29)
-print(a1.sum())
+a1=Sum(10,20)
+a1.sum()
+
 
 # regular and basic method
 a=input("enter a:")
