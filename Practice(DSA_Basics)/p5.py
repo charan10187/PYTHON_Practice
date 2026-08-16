@@ -6,5 +6,6 @@ for i in range(1,N+1):
 print(f"final sum is {sum}")
 
     
-    
+# sum() is a built-in function in python
+#  it is good to not use built-in functions    
     
