@@ -2,9 +2,9 @@
 A=int(input())
 B=int(input())
 C=int(input())
-if A>B:
+if A>B and A>C:
     print(A)
-elif B>C:
+elif B>A and B>C:
     print(B)
-else:
+elif C>A and C>B:
     print(C)

@@ -3,6 +3,6 @@ a=int(input("A="))
 b=int(input("B="))
 print("Output:")
 if a>b: 
-    print("a")
+    print(a)
 else:
-    print("b")
+    print(b)
