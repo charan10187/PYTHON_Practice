@@ -6,7 +6,7 @@ for i in range(N,0,-1):
 print(f"Output: {fact}")
 
 # another approach
-fact=1
+fact=1          
 for i in range(1,N+1):
     fact=fact*i
 print("Output: ",fact)
