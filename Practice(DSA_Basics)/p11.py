@@ -3,11 +3,16 @@ n=int(input("N = "))
 
 a=0
 b=1
-print(a)
-print(b)
-for fib in range(0,n-2):
-    fib=a+b
-    a=b
-    b=fib
-    print(fib)
+if n==0:
+    print(a)
+elif n==1:
+    print(a)
+else:
+    print(a)
+    print(b)
+    for fib in range(0,n-2):
+        fib=a+b
+        a=b
+        b=fib
+        print(fib)
     
