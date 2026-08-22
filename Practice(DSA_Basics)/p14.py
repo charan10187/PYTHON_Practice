@@ -5,9 +5,20 @@
 '''
 
 N=int(input("Input: "))
-sum=0
+total=0
+
+# Using while loop 
+
+while N!=0:
+    dig=N%10
+    total=dig+total
+    N=N//10
+print(total)
+
+# Using for loop
+
 for i in range(len(str(N))):
     val=N%10
-    sum=val+sum
+    total=val+total
     N=N//10
-print(sum)
+print(total)
