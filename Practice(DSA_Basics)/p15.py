@@ -9,17 +9,14 @@
  '''
 
 N=int(input("Input:"))
-count=0
 even=0
 odd=0
 while N!=0:
     digit=N%10
     if digit%2==0:
-        even=count
-        count+=1
+        even=even+1
     else:
-        odd=count
-        count+=1
+        odd=odd+1
     N=N//10
 print(even)
 print(odd)
