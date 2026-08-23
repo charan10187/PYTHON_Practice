@@ -7,7 +7,7 @@
 '''
 
 n=int(input("Input : "))
-small=n
+small=9 # 9 is the largest sinhle digit 
 while n!=0:
     digit=n%10
     if digit<small:
