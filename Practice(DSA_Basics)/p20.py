@@ -3,7 +3,7 @@
 
 '''
 class palindrome:   
-    def ditrct(self,N):
+    def direct(self,N):
         dup=N
         rev=0
         while N!=0:
@@ -28,7 +28,7 @@ class palindrome:
 
 N=int(input("enter N: "))
 p1=palindrome()
-print(p1.ditrct(N))
+print(p1.direct(N))
 print(p1.slicing(N))
 
 
