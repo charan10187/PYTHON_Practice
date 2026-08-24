@@ -7,10 +7,10 @@
 '''
 
 n=int(input("Input : "))
-small=9 # 9 is the largest sinhle digit 
+small=9 # 9 is the largest single digit 
 while n!=0:
     digit=n%10
-    if digit<small:
+    if digit<small:    #    small = min(small, digit)
         small=digit
     n=n//10
 print(small)
