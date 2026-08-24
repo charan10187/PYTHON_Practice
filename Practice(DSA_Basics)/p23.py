@@ -14,3 +14,16 @@ print(total)
 
 
 
+'''
+    # using list
+        nums = list(map(int, input("Enter numbers separated by spaces: ").split()))
+
+total = 1
+
+for num in nums:
+    total *= num
+
+print(total)
+
+
+'''
