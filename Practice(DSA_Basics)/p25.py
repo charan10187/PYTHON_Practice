@@ -11,8 +11,14 @@ new=-1
 
 while N!=0:
     digit=N%10
-    if digit>new:
+
+    if digit>old:
         new=old
         old=digit
+    elif digit>new and digit!=old:
+        new=digit
+
     N//=10
-print("second Largest digit",old)
+print("second Largest digit",new)
+
+
