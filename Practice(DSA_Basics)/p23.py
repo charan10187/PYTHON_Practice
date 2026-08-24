@@ -6,8 +6,14 @@
 
 N=int(input("Input = "))
 total=1
-while N!=0:
+'''while N!=0:
     digit=N%10
     total=total*digit
     N//=10
+print(total)
+'''
+# using for loop
+
+for a in range(1,N+1):
+    total=total*a
 print(total)
