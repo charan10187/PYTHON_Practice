@@ -5,13 +5,13 @@
 '''
 
 def count(N,T):   
-    count=0
+    total=0
     while N!=0:
         digit=N%10
         if digit==T:
-            count+=1
+            total+=1
         N=N//10
-    return count
+    return total
 
 N=int(input("Number = "))
 T=int(input("Target = "))
