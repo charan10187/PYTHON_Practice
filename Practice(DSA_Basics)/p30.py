@@ -11,11 +11,11 @@ output=0
 rev=0
 while N!=0:
     digit=N%10
-    print(digit)
+    # print(digit)
     if digit!=target:
-        print(digit,"==",target)
+        # print(digit,"==",target)
         output=output*10+digit
-        print(output)
+        # print(output)
     N//=10
 while output!=0:
     digit2=output%10
