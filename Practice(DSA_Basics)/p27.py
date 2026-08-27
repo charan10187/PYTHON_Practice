@@ -6,7 +6,6 @@
 """
 
 N=int(input("Input = "))
-n=str(N)
 total=0
 count=0
 dup=N
@@ -16,7 +15,7 @@ while N!=0:
     N//=10
 # print(total)
 # print(len(n))
-result=int(total/len(n))
+result=int(total/len(str(dup)))
 # print(result)
 while dup!=0:
     digit2=dup%10
@@ -26,3 +25,4 @@ while dup!=0:
     if digit2>result:
         count+=1
 print("count =",count)
+
