@@ -41,3 +41,11 @@ for i in range(len(numbers)):
             print(numbers[i],numbers[j])
            
 '''
+# Exercise 7
+numbers=[1,2,2,3]
+count=0
+for i in range(len(numbers)):
+    for j in range(len(numbers)):
+        if i!=j and numbers[i]==numbers[j]:
+            count+=1
+print("count = ",count)
