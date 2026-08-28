@@ -1,5 +1,3 @@
-'''
-
 # Exercise 1
 numbers=[10,20,30,40,50]
 for num in numbers:
@@ -40,7 +38,7 @@ for i in range(len(numbers)):
         if i!=j and numbers[i]==numbers[j]:
             print(numbers[i],numbers[j])
            
-'''
+
 # Exercise 7
 numbers=[1,2,2,3]
 count=0
@@ -49,3 +47,11 @@ for i in range(len(numbers)):
         if i!=j and numbers[i]==numbers[j]:
             count+=1
 print("count = ",count)
+
+
+# removing duplicates from list
+check=[]
+for i in range(len(N)):
+    if N[i] not in check:
+        check.append(N[i])
+print(check)
