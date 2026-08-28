@@ -21,10 +21,16 @@ for i in numbers:
         new.append(i)
 print(new)
 
-'''
-
 # Exercise 4
 numbers=[10,20,30,40,50]
 
 for i in range(len(numbers)):
     print("Index",i,"=",numbers[i])
+
+'''
+
+# Exercise 5
+numbers=[10,20,30]
+for i in range(len(numbers)):
+    for j in range(len(numbers)):
+        print(numbers[i],numbers[j])
