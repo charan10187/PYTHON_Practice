@@ -5,7 +5,6 @@
 
 '''
 N=list(input("Input = "))
-nr=[]
 a=False
 for i in N:
     if N.count(i)==1:
