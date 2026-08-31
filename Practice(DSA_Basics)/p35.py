@@ -6,11 +6,11 @@
 '''
 N=list(input("Input = "))
 nr=[]
-a=0
+a=False
 for i in N:
     if N.count(i)==1:
         print(i)
-        a=1
+        a=True
         break
-if a!=1:
+if a!=True:
     print("No non-repeated digit")
