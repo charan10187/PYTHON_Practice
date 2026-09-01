@@ -12,7 +12,8 @@ for digit in N:
     if digit not in result:
         if N.count(digit)>1:
             result.append(digit)
-            if int(digit)>int(largest):
-                largest=digit
+            demo=int(digit)
+            if demo>largest:
+                largest=demo
 print(largest)
 
