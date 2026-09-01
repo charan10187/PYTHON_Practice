@@ -8,5 +8,11 @@ N=list(input("Input :"))
 result=[]
 largest=0
 for digit in N:
-    if N.count(digit)>1:
-        print(digit)
+    # print(digit)
+    if digit not in result:
+        if N.count(digit)>1:
+            result.append(digit)
+            if int(digit)>int(largest):
+                largest=digit
+print(largest)
+
