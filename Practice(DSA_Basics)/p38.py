@@ -8,4 +8,5 @@ for num in N:
     digit=N.count(num)
     if digit>largest:
         largest=digit
-print(largest)
+        if N.count(num)==largest:
+            print(num)
