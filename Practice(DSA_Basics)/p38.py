@@ -4,9 +4,11 @@
 
 N=list(input("Input = "))
 largest=0
+result=0
 for num in N:
     digit=N.count(num)
     if digit>largest:
         largest=digit
-        if N.count(num)==largest:
-            print(num)
+        result=num
+print(result)
+        
