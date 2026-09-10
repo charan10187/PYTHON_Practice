@@ -3,12 +3,13 @@
 '''
 
 N=list(input("Input = "))
-largest=0
+largest=9
 result=0
 for num in N:
     digit=N.count(num)
-    if digit>largest:
+    if digit<largest:
         largest=digit
         result=num
 print(result)
+
         
