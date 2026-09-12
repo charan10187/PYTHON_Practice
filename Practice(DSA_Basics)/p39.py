@@ -1,6 +1,7 @@
 '''
         Problem 39 -- Find the Smallest Repeated Digit
         Input = 5832218
+        output = 2
 
 '''
 
