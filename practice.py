@@ -17,3 +17,88 @@ print(emp1.salary)
 
 '''
 
+'''
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    pass
+
+d = Dog()
+d.speak()
+
+# Animal speak
+
+'''
+
+'''class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
+
+d = Dog()
+d.speak()
+
+# Dog bark
+'''
+'''
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    def speak(self):
+        super().speak()
+        print("Dog barks")
+
+d = Dog()
+d.speak()
+
+# Animal speaks
+# Dog barks
+
+'''
+'''
+class Dog:
+    def speak(self):
+        print("Bark")
+
+class Cat:
+    def speak(self):
+        print("Meow")
+
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    animal.speak()
+
+# Bark
+# Meow
+'''
+
+'''   '''
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name=name
+        self.balance=balance
+    def deposit(self,amount):
+        self.balance+=amount
+        print("deposite completed")
+    def withdraw(self,amount):
+        if self.balance>=amount:
+            self.balance-=amount
+            print('withdraw completed')
+        else:
+            print('In Sufficent Funds')
+    def display_balance(self):
+        print(self.balance)
+account = BankAccount("Charan", 10000)
+
+account.deposit(2000)
+account.withdraw(3000)
+
+account.display_balance()
