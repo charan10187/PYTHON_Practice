@@ -80,7 +80,7 @@ for animal in animals:
 # Meow
 '''
 
-'''   '''
+'''
 class BankAccount:
     def __init__(self, name, balance):
         self.name=name
@@ -102,3 +102,19 @@ account.deposit(2000)
 account.withdraw(3000)
 
 account.display_balance()
+
+'''
+''' conversion to list comprehension 
+numbers = [10, 15, 20, 25, 30, 35]
+
+result = []
+
+for num in numbers:
+    if num > 20:
+        result.append(num)
+
+print(result)
+
+# print([num for num in numbers if num>20 ])
+
+'''
