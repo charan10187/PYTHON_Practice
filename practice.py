@@ -118,3 +118,18 @@ print(result)
 # print([num for num in numbers if num>20 ])
 
 '''
+'''
+numbers = [1, 2, 3, 4, 5, 6]
+
+result = [num * 2 for num in numbers if num % 2 == 0]
+
+print(result)
+'''
+
+
+numbers = [1, 2, 3, 4]
+
+result = {num: num * num for num in numbers}
+
+print(result)
+
