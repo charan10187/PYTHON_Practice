@@ -127,9 +127,20 @@ print(result)
 '''
 
 
+'''
 numbers = [1, 2, 3, 4]
 
 result = {num: num * num for num in numbers}
 
 print(result)
+
+'''
+
+
+numbers = [2, 4, 6, 8]
+
+result = list(map(lambda x: x ** 2 + 1, numbers))
+
+print(result)
+
 
