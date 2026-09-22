@@ -160,3 +160,65 @@ print(result)
 |  filter()  | Keep elements satisfying a condition |
 
 '''
+'''
+numbers = [1, 2, 3, 4, 5, 6]
+
+result = list( map(lambda x: x * 10, filter(lambda x: x % 2 == 0, numbers)))
+
+print(result)
+
+# [20,40,60]
+'''
+
+'''
+numbers = [12, 15, 18, 21, 24, 27]
+
+result = list(filter(lambda x: x > 20, numbers))
+
+print(result)
+
+# [21,24,27]
+'''
+'''
+Frequency of each character in the word 
+numbers = [1, 2, 2, 3, 3, 3]
+
+freq = {}
+
+for num in numbers:
+    freq[num] = freq.get(num, 0) + 1
+
+for key, value in freq.items():
+    if value > 1:
+        print(key, value)
+
+output: 2 2
+        3 3
+'''
+'''
+
+names = ["Ravi", "Charan", "Arun"]
+
+for i, name in enumerate(names, start=1):  # here start means the index count is starts from the 1
+    print(i, name)
+
+    output: 1 Ravicla
+            2 Charan
+            3 Arun
+
+'''
+
+x = 10
+
+def outer():
+    x = 20
+
+    def inner():
+        nonlocal x
+        x = 30
+
+    inner()
+    print(x)
+
+outer()
+print(x)
