@@ -17,9 +17,9 @@ for digit in N:
             value.append(N.count(digit))
             result.append(digit)
 index=-1
-for i in range(len(value)):
-    if value[i]<smallest:
-        smallest=int(value[i])
+for i in range(len(key)):
+    if int(key[i])<smallest:
+        smallest=int(key[i])
         index=i
         # print(smallest , value)
 if index==-1:
