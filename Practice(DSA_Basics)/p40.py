@@ -2,8 +2,8 @@
 #   Input  = 5832218
 #   Output = 2
 
-nums=list(input())
-second=0
+nums=list(input("Input:"))
+second=10
 sample=[]
 smallest=9
 for num in nums:
@@ -11,7 +11,9 @@ for num in nums:
         sample.append(num)
 print(sample)
 for digit in sample:
-    if int(digit)<smalle
+    if int(digit)<smallest:
         second=smallest
         smallest=int(digit)
+    elif int(digit)<second:
+        second=int(digit)
 print(second)   
