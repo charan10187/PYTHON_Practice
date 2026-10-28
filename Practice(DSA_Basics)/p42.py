@@ -13,26 +13,31 @@
 
 # if condition satisfied update the fist=num and second=first and third =second
 
+nums=input("Input: ")
 
-from os import remove
-
-
-nums=[5,8,8,3,2,1]
-
+first=-1
+second=-1
+third=-1
 result=[]
 for num in nums:
     if num not in result:
         result.append(num)
-for i in range(1,len(result)):
-    if result[i]>result[0]:
-        remove(result[i])
-for j in range(len(result)):
-    if result[0]>result[j]:
-        print(result[j])
-
-
-
-
+for dig in result:
+    num=int(dig)
+    if num> first:   
+        third=second
+        second=first   
+        first=num      
+    elif num>second:
+        third=second
+        second=num
+    elif num>third:
+        third=num
+if third==-1:
+    print("No third largest distinct digit")
+else:
+    print(third)
+        
 
 
 
