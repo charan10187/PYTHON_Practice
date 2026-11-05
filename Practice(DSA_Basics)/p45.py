@@ -12,7 +12,6 @@ for num in nums:
     if num not in duplicate:
         duplicate.append(num)
 for num1 in duplicate:
-    if num1 in nums:
         ct=nums.count(num1)
         if ct>freq:
             freq=ct
