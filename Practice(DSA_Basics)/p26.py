@@ -16,3 +16,4 @@ while N!=0:
         small=digit
     N//=10
 print(large,small)
+
