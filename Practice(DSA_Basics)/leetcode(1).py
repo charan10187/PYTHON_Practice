@@ -19,7 +19,18 @@
 
 nums=[2,7,11,15]
 target=9
-for i in range(len(nums)):
-    for j in range(i+1,len(nums)):
-        if(nums[i]+nums[j]==target):
-            print( [i,j] )       
+# ===================================== Approch ONE 
+''' BRUTE FORCE METHOD '''
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         if(nums[i]+nums[j]==target):
+#             print( [i,j] )       
+
+# ===================================== Approch TWO
+'''reduced the time complexity'''
+def TwoSum(nums,target):
+    for i in range(len(nums)):
+        prod = target - nums[i]
+        if prod in nums and nums.index(prod)!=i:
+            return [i,nums.index(prod)]
+print( TwoSum([2,7,11,15],9))
