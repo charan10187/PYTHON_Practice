@@ -22,10 +22,8 @@ class Solution:
 
         # Step 3: Compare their frequencies in s and t
         for i in sd:
-            for j in td:
-                if sd[i]==td[j]:
-                    if sd.count(sd[i])==td.count(td[j]):
-                        return True
-
-
+             if s.count(i)!=t.count(i):
+                    return False
+        
         # Step 4: Return True if all frequencies match
+        return True
