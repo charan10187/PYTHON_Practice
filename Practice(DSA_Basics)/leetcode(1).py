@@ -28,9 +28,24 @@ target=9
 
 # ===================================== Approch TWO
 '''reduced the time complexity'''
+# def TwoSum(nums,target):
+#     for i in range(len(nums)):
+#         prod = target - nums[i]
+#         if prod in nums and nums.index(prod)!=i:
+#             return [i,nums.index(prod)]
+# print( TwoSum([2,7,11,15],9))
+
+# ==================================== Approch Three
+'''Optimal Approach'''
+seen={}
+complementry=0
 def TwoSum(nums,target):
     for i in range(len(nums)):
-        prod = target - nums[i]
-        if prod in nums and nums.index(prod)!=i:
-            return [i,nums.index(prod)]
+        complementry=target-nums[i]
+        if complementry not in seen:
+            seen[nums[i]]=i
+            
+
+
 print( TwoSum([2,7,11,15],9))
+ 
