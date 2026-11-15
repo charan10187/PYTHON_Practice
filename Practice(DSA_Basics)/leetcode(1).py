@@ -51,3 +51,8 @@ def TwoSum(nums,target):
 
 print( TwoSum([2,7,11,15],9))
  
+
+
+
+
+
