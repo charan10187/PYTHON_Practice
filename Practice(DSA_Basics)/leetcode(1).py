@@ -44,8 +44,9 @@ def TwoSum(nums,target):
         complementry=target-nums[i]
         if complementry not in seen:
             seen[nums[i]]=i
-        
-
+        else:
+            seen[nums[i]]=i
+        return seen[nums[i]],i
 
 print( TwoSum([2,7,11,15],9))
  
