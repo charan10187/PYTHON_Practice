@@ -47,7 +47,7 @@ def TwoSum(nums,target):
             seen[nums[i]]=i
         else:
             seen[nums[i]]=i
-        return seen[nums[i]],i
+        return i
 
 print( TwoSum([2,7,11,15],9))
  
