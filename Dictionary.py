@@ -71,13 +71,24 @@ data1={
 # ==> del delete an element
 
 data2= {"a":10,"b":20}
-del data2["a"]
+# del data2["a"]
 # print(data2)
 
 #  ==> .get() safely retrieve a value 
 data3= {"a":10,"b":20}
-print(data3.get("a"))
-print(data3.get("c"))
+# print(data3.get("a"))
+# print(data3.get("c"))
 
 # default value
-print(data3.get("c",9))
+# print(data3.get("c",9))
+# this helps us to avoid KeyError
+
+# Iterating through a dictionary
+# loop for keys
+num = {
+    5: 100,
+    10: 200,
+    15: 300
+}
+for key in num:
+    print(key)
