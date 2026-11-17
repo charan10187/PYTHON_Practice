@@ -84,7 +84,7 @@ data3= {"a":10,"b":20}
 # this helps us to avoid KeyError
 
 # Iterating through a dictionary
-# loop for keys
+# loop through keys
 num = {
     5: 100,
     10: 200,
@@ -92,3 +92,8 @@ num = {
 }
 for key in num:
     print(key)
+
+# loop through value
+for value in num.values():
+    print(value)
+
