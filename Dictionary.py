@@ -78,3 +78,6 @@ del data2["a"]
 data3= {"a":10,"b":20}
 print(data3.get("a"))
 print(data3.get("c"))
+
+# default value
+print(data3.get("c",9))
