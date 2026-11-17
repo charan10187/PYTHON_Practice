@@ -47,7 +47,7 @@ numbers={
 # print(5 in numbers) # False
 
 # Understanding dictionary lookup
-number={
+'''number={
     2: 0,
     7: 1,
     11: 2
@@ -56,9 +56,10 @@ number={
 if 7 in number:
     print("Found")
 else:
-    print("Not Found")
+    print("Not Found")  '''
 
-# Dictionary operations
+# Dictionary operations 
+# ==> len() counts Key-value pair
 data1={
     "name":"charan",
     "age":22,
@@ -66,3 +67,9 @@ data1={
 }
 
 print(len(data1))
+
+# ==> del delete an element
+
+data2= {"a":10,"b":20}
+del data2["a"]
+print(data2)
