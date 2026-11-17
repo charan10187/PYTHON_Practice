@@ -66,10 +66,15 @@ data1={
     "city":"Hyderabad"
 }
 
-print(len(data1))
+# print(len(data1))
 
 # ==> del delete an element
 
 data2= {"a":10,"b":20}
 del data2["a"]
-print(data2)
+# print(data2)
+
+#  ==> .get() safely retrieve a value 
+data3= {"a":10,"b":20}
+print(data3.get("a"))
+print(data3.get("c"))
