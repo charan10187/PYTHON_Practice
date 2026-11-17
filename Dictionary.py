@@ -46,6 +46,7 @@ numbers={
 # print(2 in numbers) # True
 # print(5 in numbers) # False
 
+# Understanding dictionary lookup
 number={
     2: 0,
     7: 1,
@@ -56,3 +57,12 @@ if 7 in number:
     print("Found")
 else:
     print("Not Found")
+
+# Dictionary operations
+data1={
+    "name":"charan",
+    "age":22,
+    "city":"Hyderabad"
+}
+
+print(len(data1))
