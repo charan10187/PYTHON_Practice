@@ -6,7 +6,7 @@ user={
     "Designation": "IT Intern"
 }
 
-print(user)
+# print(user)
 
 # Accessing Values
 student={
@@ -14,8 +14,8 @@ student={
     "Age":23
 }
 
-print(student["Name"])
-print(student["Age"])
+# print(student["Name"])
+# print(student["Age"])
 
 # Adding elements
 
@@ -24,4 +24,15 @@ data={}
 data["name"]="usha"
 data["age"]=23
 
-print(data)
+# print(data)
+
+# Updating elements
+
+update={
+    "Name":"charan",
+    "Age":22
+}
+
+update["Age"]=23
+
+print(update["Age"])
