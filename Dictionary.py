@@ -7,3 +7,12 @@ user={
 }
 
 print(user)
+
+# Accessing Values
+student={
+    "Name":"charan",
+    "Age":23
+}
+
+print(student["Name"])
+print(student["Age"])
