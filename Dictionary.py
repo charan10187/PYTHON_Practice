@@ -16,3 +16,12 @@ student={
 
 print(student["Name"])
 print(student["Age"])
+
+# Adding elements
+
+data={}
+
+data["name"]="usha"
+data["age"]=23
+
+print(data)
