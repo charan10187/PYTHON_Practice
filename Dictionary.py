@@ -43,5 +43,16 @@ numbers={
     7: 1
 }
 
-print(2 in numbers) # True
-print(5 in numbers) # False
+# print(2 in numbers) # True
+# print(5 in numbers) # False
+
+number={
+    2: 0,
+    7: 1,
+    11: 2
+}
+
+if 7 in number:
+    print("Found")
+else:
+    print("Not Found")
