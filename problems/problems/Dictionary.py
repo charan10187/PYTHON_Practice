@@ -110,5 +110,7 @@ for nums in range(1,5):
 print(sqr)
 
 # Dictionary comprehension
+# {key: value for item in iterable}
 sqr1={num:num*num for num in range(1,11)}
 print(sqr1)
+
