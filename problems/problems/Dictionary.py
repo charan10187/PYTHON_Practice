@@ -85,7 +85,7 @@ data3= {"a":10,"b":20}
 
 # Iterating through a dictionary
 # loop through keys
-num = {
+'''num = {
     5: 100,
     10: 200,
     15: 300
@@ -96,3 +96,13 @@ for key in num:
 # loop through value
 for value in num.values():
     print(value)
+
+# loop through Keys and values
+
+for key, value in num.items():
+    print(f"{key}:{value}")
+'''
+num = {"x": 10, "y": 20, "z": 30}
+
+for key, value in num.items():
+    print(f"{key}:{value}")
