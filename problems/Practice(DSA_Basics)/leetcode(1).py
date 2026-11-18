@@ -42,12 +42,16 @@ seen={}
 complementry=0
 def TwoSum(nums,target):
     for i in range(len(nums)):
+        print(i)
         complementry=target-nums[i]
-        if complementry not in seen:
-            seen[nums[i]]=i
+        print(target,"-",nums[i],"=",complementry)
+        if complementry in seen:
+            print("==",seen[complementry],nums.index(complementry))
+            # return seen[complementry]
         else:
             seen[nums[i]]=i
-        return i
+        print(seen)
+        
 
 print( TwoSum([2,7,11,15],9))
  
