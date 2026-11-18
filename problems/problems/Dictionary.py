@@ -103,8 +103,12 @@ for key, value in num.items():
     print(f"{key}:{value}")
 
 
-# Dictionary comprehension
+# Normal
 sqr={}
 for nums in range(1,5):
     sqr[nums]=nums*nums
 print(sqr)
+
+# Dictionary comprehension
+sqr1={num:num*num for num in range(1,11)}
+print(sqr1)
